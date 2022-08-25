@@ -1,0 +1,99 @@
+:root{
+   --dark_cyan: hsl(158, 36%, 37%);
+   --cream: hsl(30,38%, 92%);
+   --very_dark_blue: hsl(212, 21%, 14%);
+   --dark_gray_blue: hsl(228,12%, 48%);
+   --white: hsl(0, 0%, 100%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--cream);
+}
+main {
+    width: 90%;
+    margin: 30px auto; 
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 8px;  
+}
+main .product-img {
+    height: 300px;
+    background-image: url('./images/image-product-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    border-radius: 8px 8px 0 0;  
+}
+main .product-info {
+    padding: 24px;
+}
+.product-info .cat-product {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    color: #5E5D5E;
+    letter-spacing: .4rem; 
+}
+.product-info h1 {
+    margin: 20px 0 24px 0;
+    font-family: 'Fraunces', serif;
+    font-size: 3rem;
+    line-height: 32px;
+    font-weight: 700;
+    color: var(--very_dark_blue);
+}
+.product-info .product-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 24px;
+    color: #5E5D5E;
+}
+.product-info .prices{
+    margin: 40px 0 24px; 
+    display: flex;
+}
+.product-info .prices .price {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 3.8rem;
+    color: var(--dark_cyan);
+}
+.product-info .prices .price-pre-discount {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    color: #5E5D5E; 
+    text-decoration:line-through;
+    padding: 16px 24px;
+}
+button {
+    width: 100%;
+    height: 40px;
+    background-color: var(--dark_cyan);
+    border: none;
+    border-radius: 10px;
+    color: var(--white);  
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+.button-span {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+    background-image: url('./images/icon-cart.svg');
+    background-position: center;
+    background-size: cover;
+}
+button p {
+    display: inline-block;
+}
